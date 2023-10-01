@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainSpace">
+    <div class="photoAndLogo">
+        <div class="logoAndName">
+            <img class="logo" src="images/logo.png">
+            <h1>ODIN</h1>
+            
+        </div>
+    </div>
+
+    <div class="registerForm">
+        <div class="introText">
+            <p1>This is not a real online service! You know that </p1>
+            <p2>the path to paradise is through hell.</p2>
+            <p3>Sign up now to begin.</p3>
+            <p4>You know you need to, in order to achieve greatness</p4>
+        </div>
+
+        <div class="largeForm">
+            <h2>Let's do this!</h2>
+
+            <div class="firstTwoForms">
+                <div class="firstForm">
+                    <form class="form" method="post">
+                        <label class="label" for="first_name">FIRST NAME</label>
+                        <input class="input" type="text" id="first_name">                
+                    </form>
+                </div>
+                <div class="secondForm">
+                    <form class="form" method="post">
+                        <label class="label" for="last_name">LAST NAME</label>
+                        <input class="input" type="text" id="first_name">                
+                    </form>
+                </div>
+            </div>
+              
+            <div class="secondTwoForms">
+                <div class="thirdForm">
+                    <form class="form" method="post">
+                        <label class="label" for="email">EMAIL</label>
+                        <input class="input" type="email" id="email">                
+                    </form>
+                </div>
+                <div class="fourthForm">
+                    <form class="form" method="post">
+                        <label class="label" for="phone_number">PHONE NUMBER</label>
+                        <input class="input" type="number" id="phone_number" minlength="9" maxlength="9">             
+                    </form>
+                </div>
+            </div>
+
+            <div class="thirdTwoForms">
+                <div class="fifthForm">
+                    <form class="form" method="post">
+                        <label class="label" for="password">PASSWORD</label>
+                        <input name="password" class="input" type="text" id="password" pattern=".{6,}" required>                
+                    </form>
+                </div>
+                <div class="sixthForm">
+                    <form class="form" method="post">
+                        <label class="label" for="password_confirm">CONFIRM PASSWORD</label>
+                        <input name="password_confirm" class="input" type="text" id="password" pattern=".{6,}" required>                
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="buttonAndLogin">
+            <!-- Add an ID to the button for easy selection in JavaScript -->
+            <button class="createAccountBtn" id="createAccountBtn" type="submit">
+                Create Account
+            </button>
+            <p5>Already have an account? <a class="link" href=''>Log in</a></p5>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
